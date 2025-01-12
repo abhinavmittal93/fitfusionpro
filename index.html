@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitFusion Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
@@ -13,100 +15,104 @@
             <h1 class="logo">FitFusion Pro</h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#form">Get Started</a></li>
-                    <li><a href="#appointment">Book Appointment</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="get-started.html">Get Started</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Transform Your Fitness Journey with Us</h2>
-            <p>Join FitFusion Pro for tailored fitness plans, expert coaching, and flexible appointments to help you achieve your health goals!</p>
-            <a href="#form" class="cta-button">Get Started</a>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero" style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <h2>Welcome to FitFusion Pro</h2>
+                <p>Your journey to health and wellness begins here.</p>
+                <a href="get-started.html" class="cta-button">Get Started</a>
+            </div>
+        </section>
 
-    <section id="form" class="form-section">
-        <div class="container">
-            <h2>Get Your Personalized Fitness Plan</h2>
-            <form id="userForm" class="form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required>
-
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="currentBodyType">Current Body Type:</label>
-                <select id="currentBodyType" name="currentBodyType" required>
-                    <option value="">Select</option>
-                    <option value="lean">Lean and Toned</option>
-                    <option value="skinny">Skinny with Low Muscle Mass</option>
-                    <option value="muscular">Muscular but High Body Fat</option>
-                    <option value="overweight">Overweight</option>
-                </select>
-
-                <label for="desiredBodyType">Desired Body Type:</label>
-                <select id="desiredBodyType" name="desiredBodyType" required>
-                    <option value="">Select</option>
-                    <option value="lean">Lean and Toned</option>
-                    <option value="athletic">Muscular and Athletic</option>
-                    <option value="strong">Fit and Strong</option>
-                </select>
-
-                <label for="pastRoutines">Have you tried any of the following routines?</label>
-                <div>
-                    <input type="checkbox" id="routine1" name="pastRoutines" value="dietPlans">
-                    <label for="routine1">Paid Diet Plans</label>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-dumbbell service-icon"></i>
+                        <h3>Personalized Plans</h3>
+                        <p>Workout and meal plans tailored to your goals.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user service-icon"></i>
+                        <h3>Expert Coaching</h3>
+                        <p>One-on-one guidance from professional trainers.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-calendar service-icon"></i>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Book appointments at your convenience.</p>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" id="routine2" name="pastRoutines" value="gym">
-                    <label for="routine2">Gym Memberships</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="routine3" name="pastRoutines" value="yoga">
-                    <label for="routine3">Yoga/Dance/Aerobics</label>
-                </div>
+            </div>
+        </section>
 
-                <label for="challenges">What challenges have you faced?</label>
-                <textarea id="challenges" name="challenges" placeholder="Describe any obstacles..." required></textarea>
-
-                <label for="interest">Are you interested in a paid fitness plan?</label>
-                <div>
-                    <input type="radio" id="interestYes" name="interest" value="yes" required>
-                    <label for="interestYes">Yes</label>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>FitFusion Pro is dedicated to helping individuals achieve their health and fitness goals. With expert coaching, customized plans, and flexible scheduling, we aim to make fitness accessible to everyone.</p>
+                    <img src="images/about.jpg" alt="About FitFusion Pro">
                 </div>
-                <div>
-                    <input type="radio" id="interestNo" name="interest" value="no" required>
-                    <label for="interestNo">No</label>
-                </div>
+            </div>
+        </section>
 
-                <label for="preferredTime">Preferred Appointment Date and Time:</label>
-                <input type="datetime-local" id="preferredTime" name="preferredTime" required>
+        <section id="get-started" class="get-started">
+            <div class="container">
+                <h2>Get Started</h2>
+                <p>Take the first step towards a healthier you. Fill out our form and get your personalized fitness plan today!</p>
+                <form id="getStartedForm" class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <button type="button" id="payButton" class="btn-primary">Submit and Pay</button>
-            </form>
-        </div>
-    </section>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="goals">Your Goals:</label>
+                    <textarea id="goals" name="goals" placeholder="Describe your fitness goals..." required></textarea>
+
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <p>Choose a convenient time for your fitness consultation. We look forward to helping you achieve your goals!</p>
+                <iframe src="https://calendly.com/your-username" width="100%" height="600" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -115,45 +121,14 @@
     </footer>
 
     <script>
-        document.getElementById('payButton').addEventListener('click', function(e) {
+        document.getElementById('getStartedForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            const form = document.getElementById('userForm');
+            alert('Thank you for getting started! We will contact you soon.');
+        });
 
-            const formData = {
-                name: form.name.value,
-                email: form.email.value,
-                phone: form.phone.value,
-                age: form.age.value,
-                gender: form.gender.value,
-                currentBodyType: form.currentBodyType.value,
-                desiredBodyType: form.desiredBodyType.value,
-                pastRoutines: Array.from(form.querySelectorAll('input[name="pastRoutines"]:checked')).map(el => el.value),
-                challenges: form.challenges.value,
-                interest: form.interest.value,
-                preferredTime: form.preferredTime.value
-            };
-
-            const options = {
-                key: "YOUR_RAZORPAY_KEY",
-                amount: 50000,
-                currency: "INR",
-                name: "FitFusion Pro",
-                description: "Fitness Consultation Fee",
-                handler: function(response) {
-                    alert("Payment Successful! ID: " + response.razorpay_payment_id);
-                    console.log("User data:", formData);
-                },
-                prefill: {
-                    name: formData.name,
-                    email: formData.email,
-                },
-                theme: {
-                    color: "#3399cc",
-                },
-            };
-
-            const rzp = new Razorpay(options);
-            rzp.open();
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
         });
     </script>
 </body>
